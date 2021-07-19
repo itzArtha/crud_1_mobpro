@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Input ID Mahasiswa"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Input NIM Mahasiswa"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editID"
+        app:layout_constraintTop_toBottomOf="@+id/editID" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Input Nama Mahasiswa"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editNIM"
+        app:layout_constraintTop_toBottomOf="@+id/editNIM" />
+
+    <EditText
+        android:id="@+id/editAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Input Alamat Mahasiswa"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editNama"
+        app:layout_constraintTop_toBottomOf="@+id/editNama" />
+
+    <RadioGroup
+        android:id="@+id/radioJnsKel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/editAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/editAlamat">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTinggiBdn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Input Tinggi Badan Mahasiswa"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/radioJnsKel"
+        app:layout_constraintTop_toBottomOf="@+id/radioJnsKel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
